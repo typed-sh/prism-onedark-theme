@@ -7,7 +7,6 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: #ABB2BF;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -21,18 +20,6 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #383e49;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #9aa2b1;
 }
 
 @media print {
@@ -131,42 +118,41 @@ pre[class*="language-"] {
 }
 
 pre.line-numbers {
-	position: relative;
-	padding-left: 3.8em;
-	counter-reset: linenumber;
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
 }
 
 pre.line-numbers > code {
-	position: relative;
+  position: relative;
 }
 
 .line-numbers .line-numbers-rows {
-	position: absolute;
-	pointer-events: none;
-	top: 0;
-	font-size: 100%;
-	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
-	letter-spacing: -1px;
-	border-right: 0;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 0;
 
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .line-numbers-rows > span {
-	pointer-events: none;
-	display: block;
-	counter-increment: linenumber;
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
 }
 
 .line-numbers-rows > span:before {
-	content: counter(linenumber);
-	color: #5C6370;
-	display: block;
-	padding-right: 0.8em;
-	text-align: right;
+  content: counter(linenumber);
+  color: #5C6370;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
 }
