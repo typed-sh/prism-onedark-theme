@@ -2,6 +2,8 @@
 
 Theme based on Atom One Dark for Prism JS.
 
+- This is the version for [Typed.sh](https://typed.sh).
+
 ## Install
 
 1. Install [prismJS](https://github.com/PrismJS/prism)
